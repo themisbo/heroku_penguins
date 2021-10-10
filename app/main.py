@@ -6,7 +6,7 @@ from sklearn.impute import KNNImputer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 
-penguins = pd.read_csv('PalmerPenguins.csv')
+penguins = pd.read_csv('app/PalmerPenguins.csv')
 penguins = penguins.dropna()
 penguins = penguins.drop("year", axis = 1)
 penguins = penguins.drop("island", axis = 1)
